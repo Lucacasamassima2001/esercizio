@@ -125,10 +125,11 @@
 .ex-10-icon {
     font-size: 60px;
     animation: rotation 2s linear infinite;
+    animation-direction: reverse;
 }
 
 @keyframes rotation{
-    0% {
+    100% {
         transform: rotate(1turn);
     }
 }
@@ -139,21 +140,21 @@
 }
 
 .ex-11-icon:hover{
-    animation: almost 2s linear infinite;
+    animation: almost 2s linear forwards;
 }
 
 @keyframes almost{
-    0%{
+    /* 0%{
         transform: rotate(0);
-    }
-
-    75%{
-        transform: rotate(315deg);
-    }
+    } */
 
     100%{
-        transform: rotate(0);
+        transform: rotate(270deg);
     }
+
+    /* 100%{
+        transform: rotate(0);
+    } */
 }
 
 
@@ -172,15 +173,15 @@
 }
 
 .ex-12-button:hover .ex-12-top-white{
-    animation: bordertop-movement 1s linear infinite;
+    animation: bordertop-movement 2s linear infinite;
 }
 
 @keyframes bordertop-movement{
-    0% {
+    /* 0% {
         left: 15%;
-    }
+    } */
     50% {
-        left: 70%;
+        left: 60%;
     }
     100% {
         left: 15%;
@@ -188,15 +189,15 @@
 }
 
 .ex-12-button:hover .ex-12-bottom-white{
-    animation: borderbottom-movement 1s linear infinite;
+    animation: borderbottom-movement 2s linear infinite;
 }
 
 @keyframes borderbottom-movement{
-    0% {
+    /* 0% {
         right: 15%;
-    }
+    } */
     50% {
-        right: 70%;
+        right: 60%;
     }
     100% {
         right: 15%;
